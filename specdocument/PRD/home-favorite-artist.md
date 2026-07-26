@@ -6,8 +6,7 @@
 
 ## Android 화면명
 
-- 기존: `HomeScreen`, `CommunityMainScreen`, `InternalWebViewScreen`
-- 추가 구현 대상: `FavoriteArtistSelectScreen`
+- 기존: `HomeScreen`, `CommunityMainScreen`, `OnboardingFavoriteArtistScreen`, `InternalWebViewScreen`
 
 ## 요구사항
 
@@ -22,7 +21,7 @@
 ## 사용자 흐름
 
 1. 메인 진입 시 `HomeScreen`에서 배너, 관심 아티스트, 관련 노트를 조회한다.
-2. 첫 방문이면 `FavoriteArtistSelectScreen`을 표시한다.
+2. 첫 방문이면 `OnboardingFavoriteArtistScreen`을 표시한다.
 3. 사용자가 아티스트를 검색하고 선택한 뒤 완료하면 관심 아티스트 목록을 저장한다.
 4. 홈에서 관심 아티스트를 누르면 `CommunityMainScreen`으로 이동한다.
 5. 노트 영역을 누르면 `NoteDetailScreen`으로 이동한다.
@@ -83,11 +82,10 @@
 
 ## Android Decision Needed
 
-- 필수 확인: Android의 `OnboardingFavoriteArtistScreen`을 홈 첫 방문 선택 화면으로 재사용할지, 별도 `FavoriteArtistSelectScreen`으로 만들지 결정해야 한다.
+- 필수 확인: Android의 `OnboardingFavoriteArtistScreen`을 홈 첫 방문 흐름의 활성 라우트에 연결할지 결정해야 한다.
 - 필수 확인: 비로그인 홈에서 관심 아티스트 영역을 비워둘지, 추천/전체 아티스트를 노출할지 결정해야 한다.
 - 권장 확인: 배너 클릭을 내부 웹뷰로 통일할지 외부 브라우저/딥링크를 허용할지 정한다.
 
 ## Open Questions
 
 - iOS의 first visitor API가 관심 아티스트 선택 팝업/화면 노출 여부만 의미하는지, 배너/이벤트 노출 정책과 연결되는지 확인이 필요하다.
-

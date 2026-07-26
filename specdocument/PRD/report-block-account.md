@@ -6,8 +6,8 @@
 
 ## Android 화면명
 
-- 추가 구현 대상: `ReportScreen`, `BlockedUsersScreen`, `DeleteAccountScreen`
-- 관련 기존 화면: `SettingScreen`, `NoteDetailScreen`, `CommunityMainScreen`, `MyPageScreen`
+- 기존: `NoteReportScreen`, `BlockedUsersScreen`, `SettingScreen`, `NoteDetailScreen`, `CommunityMainScreen`, `MyPageScreen`
+- 추가 구현 대상: `DeleteAccountScreen`
 
 ## 요구사항
 
@@ -22,7 +22,7 @@
 ## 사용자 흐름
 
 1. 노트 또는 댓글 메뉴에서 신고를 선택한다.
-2. `ReportScreen`에서 신고 사유를 선택하고 제출한다.
+2. `NoteReportScreen`에서 신고 사유를 선택하고 제출한다.
 3. 제출 성공 시 완료 상태를 표시하고 이전 화면으로 돌아간다.
 4. 노트/댓글 메뉴에서 사용자 차단을 선택하면 확인 후 차단 요청을 보낸다.
 5. 설정에서 `BlockedUsersScreen`으로 이동해 차단 목록을 확인한다.
@@ -90,4 +90,3 @@
 ## Open Questions
 
 - 신고 사유 enum과 서버 에러 코드는 서버 계약 확인이 필요하다.
-

@@ -12,8 +12,8 @@ Android 구현은 iOS 현재 동작을 우선으로 한다. 엑셀 명세는 기
 
 ## 공통 화면/내비게이션
 
-- Android 기존 화면명: `SplashScreen`, `LoginScreen`, `OnboardingTermsScreen`, `OnboardingGenderAgeScreen`, `ProfileScreen`, `WelcomeScreen`, `HomeScreen`, `CommunityMainScreen`, `NoteDetailScreen`, `NoteFormScreen`, `SearchSongScreen`, `NoteSearchScreen`, `NoteSearchResultScreen`, `MyPageScreen`, `SettingScreen`, `UserInfoScreen`, `InternalWebViewScreen`
-- Android 추가 구현 대상 화면명: `NotificationScreen`, `ReportScreen`, `BlockedUsersScreen`, `DeleteAccountScreen`, `FavoriteArtistSelectScreen`
+- Android 기존 화면명: `SplashScreen`, `LoginScreen`, `OnboardingTermsScreen`, `OnboardingGenderAgeScreen`, `OnboardingFavoriteArtistScreen`, `ProfileScreen`, `WelcomeScreen`, `HomeScreen`, `CommunityMainScreen`, `NotificationScreen`, `NoteDetailScreen`, `NoteReportScreen`, `NoteFormScreen`, `SearchSongScreen`, `NoteSearchScreen`, `NoteSearchResultScreen`, `MyPageScreen`, `SettingScreen`, `UserInfoScreen`, `EditProfileScreen`, `BlockedUsersScreen`, `InternalWebViewScreen`
+- Android 추가 구현 대상 화면명: `DeleteAccountScreen`
 - iOS는 Coordinator 기반이고 Android는 Compose Navigation 기반이므로 화면 전환은 Android Navigation Graph에서 명시적으로 관리한다.
 
 ## 공통 상태/이벤트
@@ -47,4 +47,3 @@ Android 구현은 iOS 현재 동작을 우선으로 한다. 엑셀 명세는 기
 
 - 비로그인 탐색 범위는 iOS 구현 기준으로 제한하되, Android 기존 구현에 더 넓은 탐색이 이미 있는 경우 유지할지 축소할지 확인이 필요하다.
 - 엑셀의 일부 Android 전용 UX 요구가 iOS 구현과 다를 때 제품 정책으로 채택할지 `future-or-excluded.md`로 보낼지 기능별 판단이 필요하다.
-

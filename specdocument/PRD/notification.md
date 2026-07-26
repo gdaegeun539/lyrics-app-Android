@@ -6,7 +6,7 @@
 
 ## Android 화면명
 
-- 추가 구현 대상: `NotificationScreen`
+- 기존: `NotificationScreen`
 - 관련 기존 진입점: `HomeScreen`, `MyPageScreen`
 
 ## 요구사항
@@ -74,4 +74,3 @@
 ## Open Questions
 
 - 전체 알림이 노트 상세로 이동하는지, 공지 웹뷰/이벤트 화면으로 이동하는지 알림 타입별 정책 확인이 필요하다.
-

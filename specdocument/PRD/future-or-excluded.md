@@ -36,7 +36,7 @@
 
 - iOS는 홈 첫 방문 후 관심 아티스트 선택 화면을 제공한다.
 - Android에는 `onboarding/favoriteartist` 구현이 있으나 active nav flow에 연결되지 않았다.
-- 본문에서는 홈 첫 방문 `FavoriteArtistSelectScreen` 결정사항으로 다룬다.
+- 본문에서는 홈 첫 방문 `OnboardingFavoriteArtistScreen` 연결 결정사항으로 다룬다.
 
 ### 행사 정보 탭
 
@@ -70,4 +70,3 @@
 - iOS 현재 코드에서 대응 화면/ViewModel/API 구현 근거가 확인된다.
 - Android 구현 범위로 사용자가 명시적으로 지정한다.
 - 서버 API와 제품 정책이 확정되어 Android 구현 태스크로 바로 전환 가능하다.
-

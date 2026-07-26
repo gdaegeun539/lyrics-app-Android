@@ -11,7 +11,7 @@
 | 엑셀 테마 | 주요 에픽/기능 | PRD 문서 | Android 화면명 | iOS reference |
 |---|---|---|---|---|
 | 온보딩 | 로그인, 약관 동의, 회원정보 수집, 프로필 설정 | `onboarding-auth.md` | `LoginScreen`, `OnboardingTermsScreen`, `OnboardingGenderAgeScreen`, `ProfileScreen`, `WelcomeScreen` | `LoginViewController`, `UseAgreementViewController`, `UserInformationViewController`, `ProfileViewController`, `WelcomeViewController`, `LoginViewModel`, `ProfileViewModel` |
-| 홈화면(좌측탭) | 사용자 맞춤 선택, 관심 아티스트, 최신 게시글 피드 | `home-favorite-artist.md`, `community-note-feed.md` | `HomeScreen`, `CommunityMainScreen`, `FavoriteArtistSelectScreen` | `HomeViewController`, `ArtistSelectViewController`, `SearchMoreFavoriteArtistViewController`, `HomeViewModel`, `ArtistSelectViewModel` |
+| 홈화면(좌측탭) | 사용자 맞춤 선택, 관심 아티스트, 최신 게시글 피드 | `home-favorite-artist.md`, `community-note-feed.md` | `HomeScreen`, `CommunityMainScreen`, `OnboardingFavoriteArtistScreen` | `HomeViewController`, `ArtistSelectViewController`, `SearchMoreFavoriteArtistViewController`, `HomeViewModel`, `ArtistSelectViewModel` |
 | 비로그인 유저용 홈화면(좌측탭) | 아티스트 찾아보기, 최신 게시글 피드 제한 | `home-favorite-artist.md`, `common-policies.md` | `HomeScreen`, `CommunityMainScreen` | `HomeViewController`, `HomeViewModel` |
 | 곡 검색(중앙탭) | 곡 검색, 곡 선택, 게시글 필터 | `search.md` | `NoteSearchScreen`, `NoteSearchResultScreen`, `NoteDetailScreen` | `SearchNoteViewController`, `SearchNoteViewModel`, `GetSearchedNotesUseCase`, `GetSongNotesUseCase` |
 | 비로그인 유저용 곡 검색(중앙탭) | 곡 검색, 곡 선택, 로그인 필요 액션 제한 | `search.md`, `common-policies.md` | `NoteSearchScreen`, `NoteSearchResultScreen`, `NoteDetailScreen` | `SearchNoteViewController`, `SearchNoteViewModel` |
@@ -56,6 +56,5 @@
 
 - Android 현재 활성 온보딩 흐름은 `login -> terms -> genderage -> profile -> welcome`이다.
 - `onboarding/favoriteartist`는 구현 파일이 있으나 active nav flow에 연결되어 있지 않다.
-- Android에는 이미 `NoteFormScreen`, `SearchSongScreen`, `NoteSearchScreen`, `NoteSearchResultScreen`, `NoteDetailScreen`, `CommunityMainScreen`, `HomeScreen`, `MyPageScreen`, `SettingScreen`, `UserInfoScreen`이 존재한다.
-- 알림, 신고, 차단 목록, 회원탈퇴 등은 iOS reference가 더 강하므로 Android 추가 구현 대상으로 표시했다.
-
+- Android에는 이미 `OnboardingFavoriteArtistScreen`, `HomeScreen`, `CommunityMainScreen`, `NotificationScreen`, `NoteSearchScreen`, `NoteSearchResultScreen`, `NoteDetailScreen`, `NoteReportScreen`, `NoteFormScreen`, `SearchSongScreen`, `MyPageScreen`, `SettingScreen`, `UserInfoScreen`, `EditProfileScreen`, `BlockedUsersScreen`이 존재한다.
+- 알림, 신고, 차단 목록 화면은 Android에 구현되어 있으며, 회원탈퇴 화면은 추가 구현 대상으로 남아 있다.

@@ -6,8 +6,7 @@
 
 ## Android 화면명
 
-- 기존: `NoteDetailScreen`, `InternalWebViewScreen`
-- 추가 구현 대상: `ReportScreen`
+- 기존: `NoteDetailScreen`, `NoteReportScreen`, `InternalWebViewScreen`
 
 ## 요구사항
 
@@ -26,7 +25,7 @@
 3. 댓글 입력창에 내용을 입력하고 등록한다.
 4. 댓글 등록 성공 시 댓글 목록과 댓글 수가 갱신된다.
 5. 본인 댓글 삭제 선택 시 확인 후 삭제한다.
-6. 신고 선택 시 `ReportScreen`으로 이동한다.
+6. 신고 선택 시 `NoteReportScreen`으로 이동한다.
 7. 본문 링크 선택 시 `InternalWebViewScreen`으로 이동한다.
 
 ## 상태/이벤트
@@ -87,4 +86,3 @@
 ## Open Questions
 
 - 댓글 글자수 제한 1,000자는 엑셀 기준이다. 서버 제한과 iOS 선제 제한 구현 여부 확인이 필요하다.
-

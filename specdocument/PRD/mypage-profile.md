@@ -6,8 +6,8 @@
 
 ## Android 화면명
 
-- 기존: `MyPageScreen`, `SettingScreen`, `UserInfoScreen`, `EditProfileScreen`, `InternalWebViewScreen`, `NoteDetailScreen`
-- 추가 구현 대상: `BlockedUsersScreen`, `DeleteAccountScreen`
+- 기존: `MyPageScreen`, `SettingScreen`, `UserInfoScreen`, `EditProfileScreen`, `BlockedUsersScreen`, `InternalWebViewScreen`, `NoteDetailScreen`
+- 추가 구현 대상: `DeleteAccountScreen`
 
 ## 요구사항
 
@@ -92,4 +92,3 @@
 ## Open Questions
 
 - FAQ, 문의, 피드백 URL은 코드/서버/운영 설정 중 어디에서 관리할지 확인이 필요하다.
-

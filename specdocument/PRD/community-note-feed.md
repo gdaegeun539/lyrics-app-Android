@@ -6,8 +6,7 @@
 
 ## Android 화면명
 
-- 기존: `CommunityMainScreen`, `NoteDetailScreen`, `NoteFormScreen`
-- 추가 구현 대상: `ReportScreen`
+- 기존: `CommunityMainScreen`, `NoteDetailScreen`, `NoteFormScreen`, `NoteReportScreen`
 
 ## 요구사항
 
@@ -30,7 +29,7 @@
 5. 글쓰기 버튼을 누르면 관심 아티스트 여부를 확인한 뒤 `NoteFormScreen`으로 이동한다.
 6. 메뉴에서 수정 선택 시 `NoteFormScreen` edit mode로 이동한다.
 7. 메뉴에서 삭제 선택 시 확인 후 노트를 삭제한다.
-8. 메뉴에서 신고 선택 시 `ReportScreen`으로 이동한다.
+8. 메뉴에서 신고 선택 시 `NoteReportScreen`으로 이동한다.
 
 ## 상태/이벤트
 
@@ -98,4 +97,3 @@
 ## Open Questions
 
 - 인기 정렬 공식은 엑셀에 있으나 iOS API 호출에서는 명시적인 sort 파라미터가 보이지 않는다. 서버 기본 정렬 정책 확인이 필요하다.
-
